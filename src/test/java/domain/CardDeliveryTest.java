@@ -15,11 +15,11 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 class CardDeliveryTest {
-
-    @BeforeAll
-    public static void setupClass() {
-        WebDriverManager.chromedriver().setup();
-    }
+//
+//    @BeforeAll
+//    public static void setupClass() {
+//        WebDriverManager.chromedriver().setup();
+//    }
 
     @BeforeEach
     void setUp() {
