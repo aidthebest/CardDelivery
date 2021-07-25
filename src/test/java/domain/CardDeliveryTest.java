@@ -1,5 +1,6 @@
 package domain;
 
+import com.codeborne.selenide.Configuration;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -11,15 +12,18 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Configuration.browser;
+import static com.codeborne.selenide.Configuration.headless;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 class CardDeliveryTest {
-//
-//    @BeforeAll
-//    public static void setupClass() {
-//        WebDriverManager.chromedriver().setup();
-//    }
+
+    @BeforeAll
+    public static void setupClass() {
+        WebDriverManager.chromedriver().setup();
+        Configuration.headless = true;
+    }
 
     @BeforeEach
     void setUp() {
