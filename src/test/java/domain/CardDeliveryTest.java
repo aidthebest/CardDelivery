@@ -24,7 +24,6 @@ class CardDeliveryTest {
     @BeforeAll
     public static void setupClass() {
         WebDriverManager.chromedriver().setup();
-        Configuration.headless = true;
     }
 
     @BeforeEach
